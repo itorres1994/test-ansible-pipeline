@@ -9,7 +9,7 @@
       apt: name=apache2 update_cache=yes state=latest
     - name: Start Apache server
       service:
-        name: httpd
+        name: apache2
         state: started
         enabled: True
     - name: Deploy static website
